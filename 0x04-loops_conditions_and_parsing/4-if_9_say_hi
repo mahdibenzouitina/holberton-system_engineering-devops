@@ -2,11 +2,10 @@
 # This script displays Holberton School 10 times for the 9th iteration print Hi4
 i=1
 while [ "$i" -le "9" ]
-do
-  echo "Holberton School"
+do echo "Holberton School"
   if [ "$i" -eq "8" ]
   then
     echo "Hi"
-  fi
+    fi
   ((i++))
 done
