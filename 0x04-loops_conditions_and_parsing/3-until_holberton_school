@@ -2,7 +2,7 @@
 # This script is displaying "Holberton School" 10 times
 i=0
 until [ "$i" -eq "10" ]
-do
+	do
 	echo "Holberton school"
 	((i++))
 done
