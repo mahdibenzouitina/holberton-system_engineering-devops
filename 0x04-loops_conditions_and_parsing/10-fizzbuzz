@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 # FizzBuzz mull 3 and 5, Buzz mull of 5, Fizz mill of 3 
 for ((i=1;i<=100;i++))
 do
