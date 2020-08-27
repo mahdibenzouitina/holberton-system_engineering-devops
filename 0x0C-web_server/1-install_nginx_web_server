@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# a Bash script that installs nginx on our web-01 server
-# that contains the string Holberton School
+# a Bash script that installs nginx on our web-01 serverl
 apt-get -y update
 apt-get -y install nginx
 chown -R "$USER":"$USER" /var/www/html
