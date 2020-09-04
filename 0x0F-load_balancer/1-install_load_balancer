@@ -4,7 +4,6 @@ apt-get install software-properties-common
 sudo add-apt-repository ppa:vbernat/haproxy-1.6
 sudo apt-get -y update
 sudo apt-get -y install haproxy=1.6.\*
-sudo service haproxy start
 sudo sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
-sudo sed -i "\$ a\listen 1401-lb-01\n\tbind *:80\n\tmode http\n\tstats enable\n\tbalance roundrobin\n\tserver 1401-web-01 35.243.159.182:80 check\n\tserver 1401-web-02 104.196.5.68:80 check" /etc/haproxy/haproxy.cfg
-sudo service haproxy start
+sudo sed -i "\$ a\listen 1401-lb-01\n\tbind *:80\n\tmode http\n\tstats enable\n\tbalance roundrobin\n\tserver 1401-web-01 35.243.159.182:80 check\n\tserver 1401-web-02 34.75.246.108:80 check" /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
